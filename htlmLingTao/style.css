@@ -1,0 +1,368 @@
+/*css for project*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 82%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  color: #444;
+  background-color: #f3f3f3;
+  padding: 0rem;
+  height: 100vh;
+}
+
+.share {
+  display: inline-block;
+  width: 100%;
+  text-align: end;
+  background-color: #e8d9c8;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 6rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+.share_picture {
+  height: 50%;
+}
+.share_picture:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.logo_info {
+  background-color: #e8d9c8;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+}
+
+.logo_picture {
+  height: inherit;
+}
+nav {
+  background-color: #e8d9c8;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 2fr 2fr;
+}
+
+nav ul li {
+  font-size: 1.2rem;
+  font-weight: 500;
+  align-items: center;
+  padding-left: 0.2rem;
+}
+
+nav li a {
+  display: block;
+  color: #444;
+
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1.5fr 5fr 2fr 1.5fr;
+  grid-gap: 10px;
+  padding: 10px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.slogen_container,
+.main,
+.right_info,
+.blank {
+  text-align: left;
+  padding: 20px 0;
+}
+
+.introduction {
+  font-style: italic;
+}
+.introduction span {
+  color: #ed7d31;
+  font-weight: bold;
+  font-size: 2rem;
+}
+#about {
+  margin-bottom: 1.2rem;
+}
+
+.container_overlay {
+  position: relative;
+  width: 725px;
+  margin: auto;
+}
+
+.container_overlay .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container_overlay .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #008cba;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  35% {
+    width: 0;
+    left: 0;
+  }
+  65% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 100%;
+    left: 0;
+  }
+}
+
+h1 {
+  padding-top: 1.5rem;
+  color: #ed7d31;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.ingredient ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
+  font-size: 0.8em;
+}
+.ingredient span {
+  padding-left: 1rem;
+  font-size: 1.4rem;
+}
+#methodLink {
+  padding-top: 1.5rem;
+}
+#methodLink span {
+  color: #ed7d31;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.mymethod ul,
+.nutrition ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+.mymethod ul li span {
+  font-size: 0.8rem;
+  padding-right: 1rem;
+}
+.nutrition p span,
+.coupon p span {
+  color: #6d9d20;
+  font-weight: bold;
+}
+.picture {
+  text-align: center;
+}
+.picture img {
+  width: 60%;
+  padding-top: 1.2rem;
+}
+.me img {
+  border-radius: 50%;
+  width: 40%;
+  float: left;
+  padding-right: 1.2rem;
+}
+.me p:nth-child(2) {
+  font-weight: bolder;
+  color: black;
+}
+.me p:nth-child(3) {
+  font-size: 1rem;
+  padding-top: 1rem;
+  /*text-align: justify;*/
+}
+.ad p:first-child {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 1.6rem;
+}
+.ad p:nth-child(2) {
+  text-align: center;
+  color: #6d9d20;
+}
+.right_info {
+  padding-left: 1.2rem;
+}
+.button {
+  padding: 1.2rem 1.2rem;
+  font-size: 1.3rem;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #0a992d;
+  border: none;
+  border-radius: 1.2rem;
+  box-shadow: 0 5px #999;
+}
+.button:hover {
+  background-color: #2895d4;
+}
+.button:active {
+  background-color: #b44894;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+.center {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+.fixed {
+  position: sticky;
+  top: 0;
+}
+.heart2 {
+  position: relative;
+  width: 2rem;
+  height: 3.5rem;
+  background-color: rgb(189, 143, 170);
+  border-radius: 50px 50px 0 0;
+  transform: rotate(315deg);
+  animation: heartmove 5s infinite ease-out;
+}
+@keyframes heartmove {
+  10% {
+    background-color: rgb(231, 84, 84);
+    /* left: 0px;
+    top: 0px; */
+  }
+  25% {
+    background-color: rgb(233, 175, 51);
+  }
+  50% {
+    /* background-color: blue; */
+    animation-timing-function: ease-out;
+    transform: translateY(20rem);
+
+    /* left: 200px;
+    top: 200px; */
+  }
+  75% {
+    background-color: rgb(252, 138, 9);
+    /* background-color: green;
+    left: 0px;
+    top: 200px; */
+  }
+  100% {
+    /* background-color: red;
+    left: 0px;
+    top: 0px; */
+  }
+}
+.heart2:before {
+  position: absolute;
+  width: 3.5rem;
+  height: 2rem;
+  left: 0;
+  bottom: 0;
+  content: "";
+  background-color: rgb(189, 143, 170);
+
+  border-radius: 0 50px 50px 0;
+  animation: heartmove2 5s infinite ease-out;
+}
+@keyframes heartmove2 {
+  10% {
+    background-color: rgb(231, 84, 84);
+  }
+  25% {
+    background-color: rgb(233, 175, 51);
+  }
+  75% {
+    background-color: rgb(252, 138, 9);
+  }
+}
+.heart_container {
+  position: sticky;
+  top: 0;
+  animation: xAxis 5s infinite ease-in;
+}
+@keyframes xAxis {
+  50% {
+    animation-timing-function: ease-in;
+    transform: translateX(10rem);
+  }
+}
+footer {
+  width: 100%;
+  background-color: #e8d9c8;
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr 2fr;
+  font-size: 1.5rem;
+  font-family: cursive;
+}
+footer img {
+  height: inherit;
+  padding-left: 5rem;
+}
+footer p {
+  margin: auto;
+}
+footer p a {
+  color: inherit;
+  text-decoration: none;
+}
+footer p a:hover {
+  color: palevioletred;
+  cursor: pointer;
+  text-decoration: underline;
+}
